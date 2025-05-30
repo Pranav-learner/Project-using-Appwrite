@@ -1,4 +1,4 @@
-const conf = {
+export const conf_env = {
     appwriteUrl: String(import.meta.env.VITE_APPWRITE_URL), // by doing this we will use appwriteURl , and it will always give a string value,
     // this conf stuff is done , because the environement wants everything to be in Strings
     appwriteProjectId: String(import.meta.env.VITE_APPWRITE_PROJECT_ID),
@@ -7,4 +7,3 @@ const conf = {
     appwriteBucketId: String(import.meta.env.VITE_APPWRITE_BUCKET_ID),
 }
 
-export default conf

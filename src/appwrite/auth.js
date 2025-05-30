@@ -1,4 +1,4 @@
-import conf from "./conf/conf.js";
+import {conf_env as conf} from "../conf/conf.js";
 import { Client, Account, ID } from "appwrite";
 
 export class AuthService {
@@ -20,6 +20,7 @@ export class AuthService {
       }
     } catch (error) {
       console.log(error);
+      return false;
     }
   }
 
